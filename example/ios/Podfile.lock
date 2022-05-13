@@ -1,0 +1,44 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - Flutter (1.0.0)
+  - tuya_sdk (0.0.1):
+    - Flutter
+    - TuyaIoTAppSDK
+  - TuyaIoTAppSDK (1.0.1):
+    - TuyaSmartSocketChannelKit (= 3.26.0-iotappsdk-1)
+    - TuyaSmartUtil (= 3.26.5-iotappsdk-8)
+  - TuyaSmartSocketChannelKit (3.26.0-iotappsdk-1):
+    - CocoaAsyncSocket (>= 7.4.3)
+    - TuyaSmartUtil (= 3.26.5-iotappsdk-8)
+  - TuyaSmartUtil (3.26.5-iotappsdk-8)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - tuya_sdk (from `.symlinks/plugins/tuya_sdk/ios`)
+  - TuyaIoTAppSDK
+
+SPEC REPOS:
+  https://github.com/TuyaInc/TuyaPublicSpecs.git:
+    - TuyaIoTAppSDK
+    - TuyaSmartSocketChannelKit
+    - TuyaSmartUtil
+  trunk:
+    - CocoaAsyncSocket
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  tuya_sdk:
+    :path: ".symlinks/plugins/tuya_sdk/ios"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  tuya_sdk: 8fa65e22c7fb863fed00275a723bac7bae8a84b3
+  TuyaIoTAppSDK: 7a4db0b27db1b1c92c7774ff50d6f1553ecf4bd6
+  TuyaSmartSocketChannelKit: 567f40762059f8d0de68159ace83a1dbefa0f5d3
+  TuyaSmartUtil: 94c04d39d7698b8613666c6a2c4960da346400d9
+
+PODFILE CHECKSUM: 46e8b31be6638fb9bd46faf99ff0f7035d297a82
+
+COCOAPODS: 1.11.2
