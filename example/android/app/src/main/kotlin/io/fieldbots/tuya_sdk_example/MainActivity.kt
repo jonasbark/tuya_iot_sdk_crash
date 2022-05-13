@@ -17,9 +17,13 @@ class MainActivity: FlutterActivity() {
 
         val handler = Handler(Looper.getMainLooper())
 
-        /*val sdk = TuyaSdkPlugin()
+        val sdk = TuyaSdkPlugin()
         sdk.applicationContext = applicationContext
         sdk.mHandler = handler
+        doIt(sdk, handler)
+    }
+
+    private fun doIt(sdk: TuyaSdkPlugin, handler: Handler) {
         sdk.init(
             "...",
             "...",
@@ -28,38 +32,16 @@ class MainActivity: FlutterActivity() {
             object : TuyaSdkGenerated.Result<Void> {
                 override fun success(result: Void?) {
 
-                    handler.postDelayed({
-                        //doIt(sdk, handler)
-                    }, 2000)
-
                 }
 
                 override fun error(error: Throwable?) {
-                    TODO("Not yet implemented")
-                }
-            })*/
-    }
 
-    private fun doIt(sdk: TuyaSdkPlugin, handler: Handler) {
-        sdk.getPairingToken("1486965680170455040", object: TuyaSdkGenerated.Result<TuyaSdkGenerated.PairingToken> {
-            override fun success(result: TuyaSdkGenerated.PairingToken?) {
-                doIt(sdk, handler)
-                /*sdk.connectToWifi(result!!, "Turmbraeu", "Anno1503", object: TuyaSdkGenerated.Result<TuyaSdkGenerated.Device> {
-                    override fun success(result: TuyaSdkGenerated.Device?) {
-                        print(result?.toString())
+                    handler.postDelayed({
                         doIt(sdk, handler)
-                    }
+                    }, 2000)
 
-                    override fun error(error: Throwable?) {
-                        TODO("Not yet implemented")
-                    }
-                })*/
-            }
-
-            override fun error(error: Throwable?) {
-                TODO("Not yet implemented")
-            }
-        })
+                }
+            })
     }
 
 }
